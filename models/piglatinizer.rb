@@ -11,7 +11,7 @@ class PigLatinizer
   end
 
 
-  def processor
+  def piglatinize
     processed_words = []
     @words.each do |word|
       if word.start_with?("a","e","i","o","u","y","A","E","I","O","U","Y")
