@@ -14,10 +14,10 @@ class PigLatinizer
   def processor
     processed_words = []
     @words.each do |word|
-      if word.start_with?("a","e","i","o","u")
+      if word.start_with?("a","e","i","o","u","y")
         processed_words << "#{word}way"
       else
-        until word.start_with?("a","e","i","o","u")
+        until word.start_with?("a","e","i","o","u","y")
           first_character = word[0]
           word.slice!(0)
           word = "#{word}#{first_character}"
