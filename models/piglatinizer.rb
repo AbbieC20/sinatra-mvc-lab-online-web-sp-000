@@ -12,8 +12,9 @@ class PigLatinizer
 
 
   def piglatinize(text)
+    words = text.split(" ")
     processed_words = []
-    @words.each do |word|
+    words.each do |word|
       if word.start_with?("a","e","i","o","u","y","A","E","I","O","U","Y")
         processed_words << "#{word}way"
       else
