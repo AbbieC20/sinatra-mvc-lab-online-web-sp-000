@@ -1,7 +1,7 @@
 class PigLatinizer
   attr_reader :text
 
-  def initialize(text)
+  def initialize
     @text = text
     text_split
   end
@@ -11,7 +11,7 @@ class PigLatinizer
   end
 
 
-  def piglatinize
+  def piglatinize(text)
     processed_words = []
     @words.each do |word|
       if word.start_with?("a","e","i","o","u","y","A","E","I","O","U","Y")
